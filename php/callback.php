@@ -4,9 +4,10 @@ $sitename = "girlschase.com.ua";
 
 
 $name = trim($_POST["name"]);
+$tel = trim($_POST["tel"]);
 $email = trim($_POST["email"]);
 $text = trim($_POST["text"]);
-$message = "Имя: $name \nEmail: $email \nТекст: $text";
+$message = "Имя: $name \nТелефон: $tel \nEmail: $email \nТекст: $text";
 
 
 

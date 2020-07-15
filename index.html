@@ -364,6 +364,7 @@
                 <div id="text_after_send">Спасибо! <br> Ваша заявка успешно отправлена.</div>
                 <form id="forma" action="#" method="post">
                     <input type="text" name="name" placeholder="Как Вас зовут?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                    <input type="text" name="tel" placeholder="Телефон" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
                     <input type="text" name="email" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
                     <textarea name="text" placeholder="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}"></textarea>
                     <input type="submit" onclick="ajaxFormRequest('forma')" value="Отправить">

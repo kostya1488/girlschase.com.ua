@@ -109,11 +109,13 @@
                 <p>девушек в возрасте от 18 лет, имеющих желание много зарабатывать и заводить новые перспективные знакомства с лицами ВИП класса в столице.</p>
             </div>
             <div class="col-md-6 footer-middle">
-                <form action="#" method="post">
-                    <input type="text" value="Как Вас зовут?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                    <input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                    <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Расскажите о себе...</textarea>
-                    <input type="submit" value="Отправить">
+                <div id="text_after_send">Спасибо! <br> Ваша заявка успешно отправлена.</div>
+                <form id="forma" action="#" method="post">
+                    <input type="text" name="name" placeholder="Как Вас зовут?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                    <input type="text" name="tel" placeholder="Телефон" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+                    <input type="text" name="email" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                    <textarea name="text" placeholder="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}"></textarea>
+                    <input type="submit" onclick="ajaxFormRequest('forma')" value="Отправить">
                 </form>
             </div>
             <div class="col-md-3 footer-right">
@@ -170,6 +172,7 @@
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     <!-- //smooth scrolling -->
+    <script src="js/ajax.js"></script>
 
 </body>
 
